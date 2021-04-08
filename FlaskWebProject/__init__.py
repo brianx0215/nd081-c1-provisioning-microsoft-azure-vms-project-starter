@@ -10,10 +10,10 @@ from flask_session import Session
 
 app = Flask(__name__)
 app.config.from_object(Config)
-app.logger.setLevel(logging.WARNING)
+app.logger.setLevel(logging.INFO)
 
 streamHandler = logging.StreamHandler()
-streamHandler.setLevel(logging.WARNING)
+streamHandler.setLevel(logging.INFO)
 
 fileHandler = logging.FileHandler("project1.log")
 fileHandler.setLevel(logging.INFO)
